@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: hsl(30, 38%, 92%);
+   
+}
+.container {
+	position: relative;
+    width: 300px;
+    height: 650px;
+	margin: 6% auto;
+	overflow: hidden;
+    display: flex;
+    background: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    flex-direction: column; 
+}
+.img .desktop{
+    display: none;
+}
+
+.img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+   
+}
+
+.img .mobile {
+    width: 400px;
+    max-width: 100%;
+}
+
+.content {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+ }
+
+.content-bx {
+    margin: 30px;
+}
+
+.content-bx .header {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+}
+
+.text {
+    margin-top: 30px;
+    font-family: 'Fraunces';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    width: 250px;
+    font-size: 10px;
+    color: hsl(228, 12%, 48%);
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.price {
+    display: flex;
+    margin-top: 30px;
+}
+.p1 {
+    color: #097969;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 30px;
+}
+.p2 {
+    margin-left: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    color: grey;
+    text-decoration: line-through;
+}
+.btn{
+    padding: 14px 94px;
+    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    background: #097969;
+    color: #fff;
+    font-size: 8px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+.fa {
+    display: none;
+}
+
+@media (min-width: 991px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+        height: 650px;
+    }
+    .img .mobile {
+        display: none;
+    }
+    .img {
+        flex-basis: 50%;
+    }
+
+    .img .desktop {
+        display: initial;
+        max-width: 100%;
+    }
+    .content {
+        flex-basis: 50%;
+    }
+    
+    .description {
+        font-size: 20px;
+        line-height: 40px;
+        width: 400px;
+    }
+
+    .content-bx .header {
+        font-size: 30px;
+    }
+    .btn {
+        margin-top: 20px;
+        padding: 15px 94px;
+        font-size: 25px;
+    }
+    .text {
+        font-size: 40px;
+        width: 300px;
+        word-wrap: break-word;
+    }
+    .fa {
+        display: initial;
+        font-size: 20px;
+    }
+
+}
+
+
+
